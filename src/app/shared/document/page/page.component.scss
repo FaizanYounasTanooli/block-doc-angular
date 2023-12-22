@@ -1,7 +1,16 @@
 .page {
-    width: 8.3in;
-    max-width: 8.3in;
-    height: 11.7in;
+    &.A4 {
+        width: 8.3in;
+        height: 11.7in;
+    }
+    &.Letter {
+        width: 8.5in;
+        height: 11in;
+    }
+    &.Leagal {
+        width: 8.5in;
+        height: 14in;
+    }
     border: 1px solid #C7C7C7;
     background-color: white;
     
