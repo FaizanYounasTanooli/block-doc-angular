@@ -9,13 +9,14 @@ export class DocumentService {
   marginBottom:number=1;
   marginLeft:number=1;
   marginRight:number=1;
+
   
   get margin():number[] {
     return [this.marginTop,this.marginRight,this.marginBottom,this.marginLeft];
   }
   get rullerTop():number[] {
     let ruller:number[]=[];
-    for()  
+    return ruller;
   }
   
   constructor() { }
