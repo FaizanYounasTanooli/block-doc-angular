@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import Page from '../page';
+import Page from '../../../modules/document/page';
 @Component({
   selector: 'app-page',
   templateUrl: './page.component.html',
@@ -9,9 +9,11 @@ export class PageComponent extends Page implements OnInit {
   
   constructor() {
     super();
+    
    }
 
   ngOnInit(): void {
+
   }
 
 }

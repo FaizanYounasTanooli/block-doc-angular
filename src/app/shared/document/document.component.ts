@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { DocumentService } from './document.service';
+import { DocumentService } from '../../modules/document/document.service';
 
 @Component({
   selector: 'app-document',
