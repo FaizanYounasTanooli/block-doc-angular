@@ -9,11 +9,9 @@ export class PageComponent extends Page implements OnInit {
   
   constructor() {
     super();
-    
    }
 
   ngOnInit(): void {
-
   }
 
 }

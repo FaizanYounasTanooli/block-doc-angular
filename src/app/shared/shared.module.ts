@@ -16,3 +16,4 @@ import { PageComponent } from './document/page/page.component';
   exports:[DocumentComponent]
 })
 export class SharedModule { }
+  

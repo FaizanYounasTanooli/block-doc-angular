@@ -1,12 +1,11 @@
 import { BehaviorSubject } from "rxjs";
 import Document from "./document";
-import Orientation from "./orientation.enum";
-import Margin from "./margin";
+import SectionSetup from "./section-setup";
 export default class Section {
-    document!:Document;
-    public margin:Margin= this.document.margin;
-    public orientation:Orientation=this.document.orientation;    
-    public get marginsSubject(): BehaviorSubject<Margin> {
-        return new BehaviorSubject(this.margin);
+    document:Document=new Document();
+    setup:SectionSetup=this.document.setup;
+
+    public get setupSubject(): BehaviorSubject<SectionSetup> {
+        return new BehaviorSubject(this.setup);
     }
 }
