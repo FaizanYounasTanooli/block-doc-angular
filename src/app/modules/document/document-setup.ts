@@ -1,9 +1,6 @@
 import { BehaviorSubject } from "rxjs/internal/BehaviorSubject";
-import Margin from "./margin";
-import Orientation from "./orientation.enum";
-import SectionSetup from "./section-setup";
 import PageSizes from "./page-size";
 
-export default class DocumentSetup extends SectionSetup {
+export default class DocumentSetup  {
     pageSize:PageSizes=PageSizes.A4;
 }

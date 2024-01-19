@@ -2,6 +2,7 @@ import { Component, Input, ViewChild, ViewContainerRef } from '@angular/core';
 import Child from 'src/app/modules/document/child';
 import { ListComponent } from './Childs/list/list.component';
 import { TextComponent } from './Childs/text/text.component';
+import { SectionComponent } from '../section.component';
 @Component({
   selector: 'app-component',
   templateUrl: './component.component.html',
@@ -10,5 +11,8 @@ import { TextComponent } from './Childs/text/text.component';
 export class ComponentComponent extends Child {
   @Input() editMod=true;
   userComp:any=ListComponent;
-
+  section!:SectionComponent;
+  tet() {
+    
+  }
 }
