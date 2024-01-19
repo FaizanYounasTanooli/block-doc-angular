@@ -1,5 +1,5 @@
 <div class="document">
-    <app-page>
-
-    </app-page>
+    <ng-container *ngFor="let pageInput of PageInputs">
+    <ng-container *ngComponentOutlet="page;inputs:pageInput"/>
+    </ng-container>
 </div>

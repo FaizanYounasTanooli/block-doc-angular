@@ -1,6 +1,6 @@
 import Section from "./section";
 import Document from "./document";
-export default class Page {
+import Child from "./child";
+export default class Page extends Child {
     section:Section = new Section();
-    
 }

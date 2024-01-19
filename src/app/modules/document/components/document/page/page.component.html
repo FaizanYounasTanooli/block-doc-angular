@@ -1,3 +1,10 @@
 <div class="page" [ngClass]="section.document.setup.pageSize">
-    <div contenteditable="true" class="editor"></div>
+    <div class="editor">
+        <ng-container *ngComponentOutlet="sectionComp;">
+        <ng-container *ngFor="let sectionInput of sectionInputs">
+            <ng-container *ngComponentOutlet="sectionComp;inputs:sectionInput" />
+        </ng-container>
+    </ng-container> 
+</div>
+    
 </div>
