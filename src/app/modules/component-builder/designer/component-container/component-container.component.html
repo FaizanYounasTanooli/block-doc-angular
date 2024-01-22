@@ -1,4 +1,6 @@
 <div class="componentBase">
-    <ng-container *ngComponentOutlet="item"></ng-container>
-    <button>Add</button>
+    <ng-container *ngFor="let item of items">
+        <ng-container *ngComponentOutlet="item"></ng-container>
+    </ng-container>
+    <button (click)="addComponent()">Add</button>
 </div>
