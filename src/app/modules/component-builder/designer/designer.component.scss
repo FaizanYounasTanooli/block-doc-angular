@@ -1,0 +1,15 @@
+.designer {
+    width: 100%;
+    height: 100vh;
+    .designerBody {
+        width: 100%;
+        height: 100%;
+        .componentArea {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+}
