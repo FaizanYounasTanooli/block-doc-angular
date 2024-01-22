@@ -1,10 +1,8 @@
 <div class="page" [ngClass]="pageSetup.pageSize">
     <div class="editor">
-        <ng-container *ngComponentOutlet="sectionComp;">
         <ng-container *ngFor="let sectionInput of sectionInputs">
-            <ng-container *ngComponentOutlet="sectionComp;inputs:sectionInput" />
+            <app-section [componetInputs]="sectionInput.componentInputs"></app-section>
         </ng-container>
-    </ng-container> 
 </div>
     
 </div>

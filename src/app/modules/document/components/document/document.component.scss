@@ -7,4 +7,16 @@
     min-height: 100vh;
     padding: 20px 0;
     gap: 20px;
+    position: relative;
+    .AddComponents {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        button {
+            padding: 5px 20px;
+        }
+    }
 }

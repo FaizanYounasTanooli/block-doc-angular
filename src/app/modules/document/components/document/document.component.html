@@ -1,5 +1,9 @@
 <div class="document">
+    <div class="AddComponents">
+        <button (click)="addText()">Text</button>
+        <button (click)="addText()">List</button>
+    </div>
     <ng-container *ngFor="let pageInput of pageInputs">
-    <ng-container *ngComponentOutlet="page;inputs:pageInput"/>
+        <app-page [sectionInputs]="pageInput.sectionInputs"></app-page>
     </ng-container>
 </div>

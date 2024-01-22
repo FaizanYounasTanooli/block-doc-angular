@@ -4,6 +4,7 @@ import { ComponentComponent } from './component/component.component';
 import SectionSetup from 'src/app/modules/document/section-setup';
 import { BehaviorSubject } from 'rxjs';
 import { PageComponent } from '../page.component';
+import ComponentInput from 'src/app/modules/document/input-modles/component-input';
 
 @Component({
   selector: 'app-section',
@@ -12,7 +13,7 @@ import { PageComponent } from '../page.component';
 })
 export class SectionComponent {
   @Input() sectionSetup:SectionSetup= new SectionSetup();
-  @Input() componetInputs:any[]=[{},{}];
+  @Input() componetInputs!:ComponentInput[];
   @Input() page!:PageComponent;
     public get setupSubject(): BehaviorSubject<SectionSetup> {
         return new BehaviorSubject(this.sectionSetup);

@@ -6,6 +6,6 @@ import Child from 'src/app/modules/document/child';
   templateUrl: './text.component.html',
   styleUrl: './text.component.scss'
 })
-export class TextComponent extends Child {
-  
+export class TextComponent {
+
 }

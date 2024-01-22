@@ -1,9 +1,15 @@
 import PageSetup from "../page-setup";
 import SectionInput from "./section-input";
 
-export default interface PageInput {
-    pageSetup:PageSetup,
-    sectionInputs:SectionInput[],
+export default class PageInput {
+    pageSetup:PageSetup;
+    sectionInputs:SectionInput[];
+    
+    constructor(pageSetup?:PageSetup,sectionInputs?:SectionInput[])
+    {
+        this.pageSetup=pageSetup ?? new PageSetup();
+        this.sectionInputs=sectionInputs ?? [new SectionInput()];
+    }
 
 
 }
