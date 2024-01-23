@@ -15,10 +15,7 @@ export class ComponentContainerComponent implements OnInit {
   @ViewChild(ComponentContainerComponent, { static: true }) myChildComponent!: ComponentContainerComponent;
   @Input() items!: any[];
   constructor(private dialog: MatDialog,
-    ) {
-      
-      
-  }
+    ) {}
   ngOnInit(): void {
     if (this.isParent)
       {
@@ -28,7 +25,7 @@ export class ComponentContainerComponent implements OnInit {
           this.items=items;
         }
         else {
-          this.items=[]
+          this.items=[];
         }
       }
   }
