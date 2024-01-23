@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ViewContainerRef, inject } from '@angular/core';
 
 @Component({
   selector: 'app-text',
@@ -6,5 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './text.component.scss'
 })
 export class TextComponent {
+  
+  vcr = inject(ViewContainerRef);
   @Input() text:string=""
 }

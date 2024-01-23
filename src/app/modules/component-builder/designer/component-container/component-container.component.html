@@ -1,6 +1,21 @@
 <div class="componentBase">
     <ng-container *ngFor="let item of items">
-        <ng-container *ngComponentOutlet="item"></ng-container>
+        <ng-container *ngIf="item=='TextComponent'">
+            <app-text>
+
+            </app-text>
+        </ng-container>
+        <ng-container *ngIf="item=='ListComponent'">
+            <app-list>
+
+            </app-list>
+        </ng-container>
+        <ng-container *ngIf="isArray(item)">
+            <app-component-container [items]="item ?? []" #ComponentContainer>
+
+            </app-component-container>
+        </ng-container>
     </ng-container>
     <button (click)="addComponent()">Add</button>
+    <button *ngIf="isParent" class="SaveButton" (click)="saveComponent()">Save</button>
 </div>
